@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/biz_news_local_weather_bg_big"
+    android:orientation="vertical" >
+<ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" 
+        android:paddingTop="10dp">
+
+        <com.view.hcititembanksys.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tx"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wwj_748"
+            app:border_color="#FFffffff"
+            app:border_width="1dp" />
+
+        <TextView
+            android:id="@+id/wdl"
+            android:layout_width="match_parent"
+            android:layout_height="28.0dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tx"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:text="未登录"
+            android:textColor="@color/white"
+            android:textSize="14.0sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/jtx"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+         android:text="计算机与通信工程学院" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <TextView
+         android:id="@+id/dzx"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="电子信息工程学院" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+
+    <TextView
+         android:id="@+id/sxy"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="商学院" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+    <TextView
+         android:id="@+id/gjj"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="国际交流学院" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+    <TextView
+        android:id="@+id/jdx"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+         android:text="机电工程系" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+    <TextView
+        android:id="@+id/dqx"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="电气工程系" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+    <TextView
+        android:id="@+id/qcx"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+         android:text="汽车工程系" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+    <TextView
+        android:id="@+id/cmx"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="传媒艺术系" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+    <TextView
+        android:id="@+id/jcb"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="基础部" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+    
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+    <TextView
+        android:id="@+id/shkx"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="社会科学和思想政治教育部" 
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+    <TextView
+         android:id="@+id/tc"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:paddingRight="10.0dip"
+        android:text="退出"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="@drawable/biz_pc_account_line" />
+	</LinearLayout>
+	</ScrollView>
+</LinearLayout>

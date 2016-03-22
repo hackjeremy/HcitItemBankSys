@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hcititembanksys"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.hcititembanksys.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.hcititembanksys.CmxActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.DqxActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.DzxActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.GjjActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.JcbActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.JdxActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.JtxActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.QcxActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.ShkxActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.SxyActivity"></activity>
+        <activity android:name="com.example.hcititembanksys.WdlActivity"></activity>
+    </application>
+
+</manifest>
