@@ -11,18 +11,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_above="@+id/splash_progressbar"
         android:textColor="#ffffff"
         android:shadowDx="3"
         android:shadowDy="3"
         android:shadowRadius="2"
         android:text="淮信题库"
-        android:textSize="30sp" />
+        android:textSize="50dp" />
 
     <ProgressBar
+        android:id="@+id/splash_progressbar"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_splash_version" />
+        android:layout_centerVertical="true" />
 
     
     <TextView 
