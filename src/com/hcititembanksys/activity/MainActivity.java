@@ -5,7 +5,10 @@ import com.slidingmenu.lib.SlidingMenu;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.DialogInterface.OnClickListener;
 import android.view.Menu;
 import android.view.View;
 import android.view.Window;
@@ -25,13 +28,15 @@ public class MainActivity extends Activity {
 	TextView cmx=null;//传媒系
 	TextView wdl=null;//未登录
 	TextView tc=null;//退出
-
+	private AlertDialog.Builder exitDialog;//退出对话框
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); 
         setContentView(R.layout.activity_main);
        init();
+       initExitDialog();
     }
   public void init(){
 	 SlidingMenu  menu=new SlidingMenu(this);
@@ -118,7 +123,7 @@ public class MainActivity extends Activity {
 			startActivity(in);
 			break;
 		case R.id.tc:
-			MainActivity.this.finish();
+			exitDialog.show();
 			break;
 		}
 	}
@@ -128,6 +133,20 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+    
+    private void initExitDialog(){
+    	exitDialog = new AlertDialog.Builder(MainActivity.this);
+		exitDialog.setTitle("提示");
+		exitDialog.setMessage("是否确定退出?");
+		exitDialog.setPositiveButton("确定", new OnClickListener() {
+
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				MainActivity.this.finish();
+			}
+		});
+		exitDialog.setNegativeButton("取消", null);
     }
     
 }
