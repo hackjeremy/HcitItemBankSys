@@ -18,7 +18,7 @@
         android:paddingLeft="10dp" 
         android:paddingTop="10dp">
 
-        <com.view.hcititembanksys.CircleImageView
+        <com.hcititembanksys.view.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/tx"
             android:layout_width="60dp"

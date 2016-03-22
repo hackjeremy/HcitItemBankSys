@@ -8,13 +8,15 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="14" />
 
+   <uses-permission android:name="android.permission.INTERNET"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.hcititembanksys.MainActivity"
+            android:name="com.hcititembanksys.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,17 +24,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.hcititembanksys.CmxActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.DqxActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.DzxActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.GjjActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.JcbActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.JdxActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.JtxActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.QcxActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.ShkxActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.SxyActivity"></activity>
-        <activity android:name="com.example.hcititembanksys.WdlActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.CmxActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.DqxActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.DzxActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.GjjActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.JcbActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.JdxActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.JtxActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.QcxActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.ShkxActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.SxyActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.WdlActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.view.hcititembanksys;
+package com.hcititembanksys.view;
 
 import com.example.hcititembanksys.R;
 

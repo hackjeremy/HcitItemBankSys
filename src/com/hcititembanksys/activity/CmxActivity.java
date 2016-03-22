@@ -1,4 +1,4 @@
-package com.example.hcititembanksys;
+package com.hcititembanksys.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ContextMenu.ContextMenuInfo;
 
-public class JdxActivity extends Activity {
+public class CmxActivity extends Activity {
 @Override
 protected void onCreate(Bundle savedInstanceState) {
 	// TODO Auto-generated method stub

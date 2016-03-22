@@ -1,5 +1,6 @@
-package com.example.hcititembanksys;
+package com.hcititembanksys.activity;
 
+import com.example.hcititembanksys.R;
 import com.slidingmenu.lib.SlidingMenu;
 
 import android.os.Bundle;
