@@ -35,7 +35,7 @@
         <activity android:name="com.hcititembanksys.activity.QcxActivity"></activity>
         <activity android:name="com.hcititembanksys.activity.ShkxActivity"></activity>
         <activity android:name="com.hcititembanksys.activity.SxyActivity"></activity>
-        <activity android:name="com.hcititembanksys.activity.WdlActivity"></activity>
+        <activity android:name="com.hcititembanksys.activity.LoginActivity"></activity>
     </application>
 
 </manifest>

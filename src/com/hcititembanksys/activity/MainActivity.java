@@ -74,7 +74,7 @@ public class MainActivity extends Activity {
 		  Intent in=new Intent();
 		switch(v.getId()){
 		case R.id.wdl:
-			in.setClass(MainActivity.this, WdlActivity.class);
+			in.setClass(MainActivity.this, LoginActivity.class);
 			startActivity(in);
 			break;
 		case R.id.jtx:
