@@ -15,7 +15,6 @@ import com.example.hcititembanksys.R;
 public class FlashActivity extends Activity{
 	private RelativeLayout rl_splash;
 	private AlphaAnimation rl_splash_animotion;
-	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
