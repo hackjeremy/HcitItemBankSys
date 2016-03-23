@@ -1,7 +1,7 @@
 package com.hcititembanksys.activity;
 
 import com.example.hcititembanksys.R;
-import com.hcititembanksys.service.NetworkStateService;
+import com.example.hcititembanksys.R.menu;
 import com.slidingmenu.lib.SlidingMenu;
 
 import android.os.Bundle;
@@ -10,13 +10,18 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.DialogInterface.OnClickListener;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class MainActivity extends Activity {
+	SlidingMenu  menu=null;
 	TextView jtx=null;//计算机与通信工程学院
 	TextView dzx=null;//电子系
 	TextView sxy=null;//商学院
@@ -29,20 +34,21 @@ public class MainActivity extends Activity {
 	TextView cmx=null;//传媒系
 	TextView wdl=null;//未登录
 	TextView tc=null;//退出
+	ImageView topbutton=null;
+	int a;
 	private AlertDialog.Builder exitDialog;//退出对话框
-	    @Override
+	
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); 
         setContentView(R.layout.activity_main);
        init();
        initExitDialog();
-//       Intent netService=new Intent(this,NetworkStateService.class);
-//		startService(netService);
     }
-    
   public void init(){
-	 SlidingMenu  menu=new SlidingMenu(this);
+	   topbutton=(ImageView)findViewById(R.id.topButton);
+	    menu=new SlidingMenu(this);
         menu.setMode(SlidingMenu.LEFT);
         menu.setBehindWidth(600);
         menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
@@ -73,6 +79,7 @@ public class MainActivity extends Activity {
         cmx.setOnClickListener(new MyOnClickListener());
         tc=(TextView) findViewById(R.id.tc);
         tc.setOnClickListener(new MyOnClickListener());
+        topbutton.setOnClickListener(new MyOnClickListener());
 }
 
   class MyOnClickListener implements android.view.View.OnClickListener {
@@ -128,9 +135,13 @@ public class MainActivity extends Activity {
 		case R.id.tc:
 			exitDialog.show();
 			break;
+		case R.id.topButton:
+			menu.showMenu();
+			break;
 		}
 	}
   }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -143,6 +154,7 @@ public class MainActivity extends Activity {
 		exitDialog.setTitle("提示");
 		exitDialog.setMessage("是否确定退出?");
 		exitDialog.setPositiveButton("确定", new OnClickListener() {
+
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				MainActivity.this.finish();
@@ -151,12 +163,4 @@ public class MainActivity extends Activity {
 		exitDialog.setNegativeButton("取消", null);
     }
     
-    
-    @Override
-    protected void onDestroy() {
-    	// TODO Auto-generated method stub
-    	super.onDestroy();
-    	Intent netService=new Intent(this,NetworkStateService.class);
-    	stopService(netService);
-    }
 }

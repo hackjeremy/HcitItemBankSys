@@ -4,34 +4,38 @@
     android:layout_height="wrap_content" >
 
     <RelativeLayout
+        android:id="@+id/relativeLayout1"
         android:layout_width="fill_parent"
-        android:layout_marginTop="0dp"
         android:layout_height="50dp"
+        android:layout_marginTop="0dp"
         android:background="@color/light_blue" >
-         
-         <ImageView
-        android:id="@+id/topButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginLeft="1dp"
-        android:src="@drawable/ic_top_bar_category" />
 
-  	 <TextView
-        android:id="@+id/topTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="计通系题库"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-        
-        
+        <ImageView
+            android:id="@+id/topButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="1dp"
+            android:src="@drawable/icon_previous2" />
+
+        <TextView
+            android:id="@+id/topTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="计通系题库"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </RelativeLayout>
-    
-    
-   
+
+    <ExpandableListView
+        android:id="@+id/expandableListView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" >
+    </ExpandableListView>
 
 </RelativeLayout>
