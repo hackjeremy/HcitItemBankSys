@@ -12,6 +12,7 @@ import android.view.ContextMenu.ContextMenuInfo;
 
 public class CmxActivity extends Activity {
 @Override
+int a;
 protected void onCreate(Bundle savedInstanceState) {
 	// TODO Auto-generated method stub
     requestWindowFeature(Window.FEATURE_NO_TITLE); 
