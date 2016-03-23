@@ -11,6 +11,7 @@ import android.view.animation.AlphaAnimation;
 import android.widget.RelativeLayout;
 
 import com.example.hcititembanksys.R;
+import com.hcititembanksys.service.NetworkStateService;
 
 public class FlashActivity extends Activity{
 	private RelativeLayout rl_splash;
@@ -21,7 +22,11 @@ public class FlashActivity extends Activity{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_splash);
 		initView();
+		Intent netService=new Intent(this,NetworkStateService.class);
+		startService(netService);
+		
 		initAnimation();
+		
 		sleep();
 	}
 	

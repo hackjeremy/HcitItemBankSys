@@ -1,6 +1,7 @@
 package com.hcititembanksys.activity;
 
 import com.example.hcititembanksys.R;
+import com.hcititembanksys.service.NetworkStateService;
 import com.slidingmenu.lib.SlidingMenu;
 
 import android.os.Bundle;
@@ -29,15 +30,17 @@ public class MainActivity extends Activity {
 	TextView wdl=null;//未登录
 	TextView tc=null;//退出
 	private AlertDialog.Builder exitDialog;//退出对话框
-	
-    @Override
+	    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); 
         setContentView(R.layout.activity_main);
        init();
        initExitDialog();
+//       Intent netService=new Intent(this,NetworkStateService.class);
+//		startService(netService);
     }
+    
   public void init(){
 	 SlidingMenu  menu=new SlidingMenu(this);
         menu.setMode(SlidingMenu.LEFT);
@@ -140,7 +143,6 @@ public class MainActivity extends Activity {
 		exitDialog.setTitle("提示");
 		exitDialog.setMessage("是否确定退出?");
 		exitDialog.setPositiveButton("确定", new OnClickListener() {
-
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				MainActivity.this.finish();
@@ -149,4 +151,12 @@ public class MainActivity extends Activity {
 		exitDialog.setNegativeButton("取消", null);
     }
     
+    
+    @Override
+    protected void onDestroy() {
+    	// TODO Auto-generated method stub
+    	super.onDestroy();
+    	Intent netService=new Intent(this,NetworkStateService.class);
+    	stopService(netService);
+    }
 }
